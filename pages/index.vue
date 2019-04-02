@@ -118,10 +118,10 @@
 					loop: false
 				},
 				mapData: {
-					longitude:  116.448233,
-					latitude: 39.915217,
-					title: '中信消费金融有限公司',
-					description: '地址：北京市朝阳区建国门外大街19号'
+					longitude:  116.403847,
+					latitude: 39.915526,
+					title: '天安门',
+					description: '地址：北京市东城区长安街'
 				}
 			}
 		},
