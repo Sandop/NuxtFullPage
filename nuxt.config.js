@@ -15,18 +15,23 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+			{src: 'http://api.map.baidu.com/api?v=2.0&ak=MDdqxkqhQzfdBzfu2tfGiidGbHgTfGrB'}
+		]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#FC0000' },
 
   /*
   ** Global CSS
   */
   css: [
+    // 项目里要使用的 SCSS 文件
+		'@/assets/css/main.scss'
   ],
 
   /*
@@ -45,9 +50,13 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
+    /**
+		 * 将查看源代码中的css采用外部引入方式
+		 */
+		extractCSS: {
+			allChunks: true
+		},
+		vender: ['axios'],
     extend(config, ctx) {
     }
   }
