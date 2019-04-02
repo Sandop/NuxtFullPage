@@ -4,7 +4,7 @@
         :class="{'page-before': option.index < currentPage,
                 'page-after': option.index > currentPage,
                 'page-current': option.index === currentPage}">
-        <div class="page-box" :style="{background: option.backgroundColor}"   >
+        <div class="page-box" :style="{background: option.backgroundColor}" :class="{'all-center': option.isCenter}">
             <slot></slot>
         </div>
     </section>
@@ -47,6 +47,9 @@
             width: 100%;
             height: 100%;
 
+            &.all-center {
+                text-align: center;
+            }
         }
         &.page-before {
             z-index: 0;

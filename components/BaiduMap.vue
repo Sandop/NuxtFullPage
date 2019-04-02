@@ -26,20 +26,20 @@ export default {
                     // 经度
                     longitude:{
                         type:Number,
-                        default:116.460642
+                        default:116.403847
                     },
                     // 纬度
                     latitude:{
                         type:Number,
-                        default:39.953156
+                        default:39.915526
                     },
                     title:{
                         type:String,
-                        default:'中信消费金融有限公司'
+                        default:'天安门'
                     },
                     description:{
                         type:String,
-                        default:'地址：北京市朝阳区建国门外大街19号'
+                        default:'地址：北京市东城区长安街'
                     }
             }
         },
