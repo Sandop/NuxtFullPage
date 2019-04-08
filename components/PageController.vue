@@ -89,7 +89,7 @@
                 },false);
             } else {
                 window.addEventListener('DOMMouseScroll',function (event) {   // Firefox
-                    let direction = event.detail > 0 ? 'up':'down';
+                    let direction = event.detail > 0 ? 'down':'up';
                     scrollHandler(direction);
                 },false);
             }

@@ -2,18 +2,15 @@
 	<div class="wrap">
 		<v-header></v-header>
 		<nuxt />
-		<v-footer></v-footer>
 	</div>
 </template>
 
 <script>
 	import VHeader from '~/components/common/header'
-  	import VFooter from '~/components/common/footer'
 
 	export default {
 		components: {
-			VHeader,
-			VFooter
+			VHeader
 		}
 	}
 </script>

@@ -1,20 +1,12 @@
 <template>
 	<div class="wrap">
-		<v-header></v-header>
 		<nuxt />
-		<v-footer></v-footer>
 	</div>
 </template>
 
 <script>
-	import VHeader from '~/components/common/header'
-  	import VFooter from '~/components/common/footer'
-
 	export default {
-		components: {
-			VHeader,
-			VFooter
-		}
+	
 	}
 </script>
 
@@ -42,6 +34,6 @@
 	}
 	.wrap {
 		width: 100%;
-		// height: 100%;
+		height: 100%;
 	}
 </style>

@@ -74,6 +74,8 @@
 </template>
 
 <script>
+	import axios from 'axios'
+	// import service from '~/plugins/axios'
 	import page from "~/components/Page"
 	import PageController from "~/components/PageController"
   	import BaiduMap from '~/components/BaiduMap'
@@ -174,8 +176,6 @@
 			*/
 			afterEnterAnimate($child) {
 				$child.$el.querySelector('.animate').classList.remove('move-left', 'move-right');
-				console.log($child);
-				console.log($child.$el.querySelector('.animate').classList);
 				
 			},
 			beforeLeaveAnimate($child) {
@@ -183,6 +183,16 @@
 				$child.$el.querySelector('.animate').classList.add(moveType);
 			}
 		},
+		async asyncData ({params,store}){
+            
+            //banner数据动态获取
+            let banner = await axios('http://visney.cn:81/NavigationMeta/get/2');
+            console.log(banner);
+			
+            return {
+                bannerData: banner.data,
+			}
+        }
 	}
 </script>
 
