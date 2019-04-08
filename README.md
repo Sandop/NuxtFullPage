@@ -25,6 +25,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ## 说明
 
 > 1.`index` 页面中自己写的组件在测试时候发现有兼容性问题，在火狐中兼容性问题已经解决，但是在IE中还存在兼容性问题，所以暂时无法使用，更换为swiper做得FullPage；
+
 > 2.swiper做得FullPage兼容性方面主流浏览器全部兼容，IE只兼容10及以上。
 
 ## 打包
