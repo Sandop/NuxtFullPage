@@ -1,6 +1,6 @@
 # NuxtFullPage
 
-> 在Nuxt项目中实现整屏滚动的效果。
+> 在Nuxt项目中实现整屏滚动的效果。，，，，
 
 ## Build Setup
 
