@@ -1,6 +1,6 @@
 # NuxtFullPage
 
-> 在Nuxt中完成整屏滚动的效果
+> 实现Nuxt中完成整屏滚动的效果
 
 ## Build Setup
 
@@ -13,7 +13,6 @@ $ npm run dev
 
 # build for production and launch server
 $ npm run build
-
 $ npm start
 
 # generate static project
