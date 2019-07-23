@@ -4,9 +4,6 @@ import pkg from './package'
 export default {
 	mode: 'universal',
 
-	/*
-	** Headers of the page
-	*/
 	head: {
 		title: pkg.name,
 		meta: [
